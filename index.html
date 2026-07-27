@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Grand Birthday Surprise!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="backgroundMusic" loop>
+        <source src="birthday_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="step active" id="step1">
+        <div class="welcome-card">
+            <h1 class="welcome-title">You've got a surprise!</h1>
+            <p class="welcome-message">Click below to start your birthday journey...</p>
+            <button id="startButton" class="action-button">Start the Celebration!</button>
+        </div>
+    </div>
+
+    <div class="step" id="step2">
+        <div class="envelope-container" id="envelopeContainer">
+            <div class="envelope">
+                <div class="envelope-back"></div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-seal"></div>
+            </div>
+            <p class="click-instruction">Click the envelope!</p>
+        </div>
+    </div>
+
+    <div class="step" id="step3">
+        <div class="letter-container" id="letterContainer">
+            <div class="letter">
+                <p>Hey Darksha!!</p>
+                <p>You made mine special last year, so...</p>
+                <p>I just had to do this. One more year in touch?</p>
+                <p>Next year I'll touch you fr. Goa? Countdowns on.</p>
+                <p>Click the three stacked buttons to reveal your special birthday surprise!</p>
+                <p><b>Ok Daddy.. What's My Surprise?</b></p>
+                <div class="gift-options">
+                    <button type="button" class="gift-option-button" data-option="if-u">I f u 🥹</button>
+                    <button type="button" class="gift-option-button" data-option="travel">Travel ✨</button>
+                    <button type="button" class="gift-option-button" data-option="or-just-be">Or, just be tg idk 🥹</button>
+                </div>
+                <p id="selectedOptionText" class="selected-option-text">Pick one and your surprise will be revealed.</p>
+                <button id="optionContinueButton" class="action-button hidden">Continue the celebration</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="step" id="step4">
+        <div class="celebration-container">
+            <div class="fireworks-container"></div>
+            <div class="confetti-cannon-container"></div>
+            <div class="balloons-container"></div>
+
+            <div class="celebration-card">
+                <p class="sub-greeting">To you bbg</p>
+                <h1 class="main-greeting typewriter-text" id="finalGreeting">Happy Birthday,</h1>
+                <h2 class="recipient-name">Darksha!!!</h2>
+                <div class="cake-container">
+                    <div class="cake">
+                        <div class="plate"></div>
+                        <div class="layer layer-bottom"></div>
+                        <div class="layer layer-middle"></div>
+                        <div class="layer layer-top"></div>
+                        <div class="icing"></div>
+                        <div class="drip drip1"></div>
+                        <div class="drip drip2"></div>
+                        <div class="drip drip3"></div>
+                        <div class="candle">
+                            <div class="flame" id="candleFlame"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="final-wish">It's my turn, right? I'm really happy to still get to write this after all that time spent without hope, and o the joy after talking to you again the first night (morning for you!). You had like actually been a glowing light beam in the night sky to my living, and with the year to come, I hope that can fully rekindle and we get bacl to our old ways - with some physical interaction this time around :)</p>
+                <p>All depends on how it goes, which it's looking very good. Me ofc 😌</p>
+                <p class="signature">From who else but thee, with my care m*ma 🥹<span class="heart-icon"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
